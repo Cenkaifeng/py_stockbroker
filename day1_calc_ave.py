@@ -5,7 +5,7 @@ import pandas as pd
 
 url_str = 'stock_data/sh000001.csv'
 stock_data = pd.read_csv(url_str, parse_dates=[1])
-stock_data = pd.DataFrame(stock_data)
+# stock_data = pd.DataFrame(stock_data)
 # print(pf)
 # 将数据按照date 增量排序 sort api 在新版本改为sort_values
 stock_data.sort_values('date', inplace=True)
